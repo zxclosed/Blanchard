@@ -1,0 +1,15 @@
+const btn = document.querySelector('#btn1')
+const form = document.querySelector('.header__form')
+const search = document.querySelector('.header__search')
+const wrapper = document.querySelector('.header__search-wrapper-header')
+const logo = document.querySelector('.header__logo-link')
+const nav = document.querySelector('.header__nav')
+
+btn.addEventListener('click', function() {
+    btn.classList.toggle('search-open')
+    form.classList.toggle('form-open')
+    search.classList.toggle('form-open')
+    wrapper.classList.toggle('search-wrapper-open')
+    logo.classList.toggle('hidden')
+    nav.classList.toggle('hidden')
+})
